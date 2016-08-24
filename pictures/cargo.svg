@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 256 256">
+ <g stroke-linejoin="round" fill-rule="evenodd" stroke="#000" stroke-miterlimit="25" stroke-width=".56452">
+  <path d="m23.361 99.965v91.66l88.723-53.918v-91.66z" fill="#181818"/>
+  <path d="m112.08 45.963v91.66l124.21 26.959v-91.66z" fill="#292929"/>
+  <path d="m23.361 99.881 124.21 26.959v91.66l-124.21-26.959z" fill="#3b3b3b"/>
+  <path d="m147.57 126.84v91.66l88.723-53.918v-91.66z" fill="#555"/>
+ </g>
+ <path fill="#fff" d="m158.07 184.08 6.3316 6.5789 0.002 6.4492-4.6048-4.7847 0.006 13.759-3.4514 1.571-0.006-13.759-4.599 8.974-0.002-6.4492z"/>
+</svg>

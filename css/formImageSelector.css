@@ -1,0 +1,72 @@
+div.form-control {
+	border: none;
+    color: transparent;
+    background-color: transparent;
+	box-shadow: none;
+	transition: none;
+	height: auto;
+	width: 10%;
+	padding: 0;
+	line-height: 0;
+}
+div#input_img_div {
+	width: 60%;
+	height: auto;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+}
+ul.thumbnails.image_picker_selector {
+	-webkit-padding-start: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+	width: auto;
+	display: inline-block;
+}
+ul.thumbnails.image_picker_selector li {
+	display: inline-block;
+	width: 50%;
+	height: auto;
+}
+ul.thumbnails.image_picker_selector li .thumbnail {
+	line-height: 0;
+	background-color: transparent;
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	transition: none;
+	margin: 0;
+	width: auto;
+	display: inline;
+}
+ul.thumbnails.image_picker_selector li .thumbnail img.image_picker_image {
+	background-color: #EEE;
+	width: 80%;
+	max-width: 96px;
+	border: 1px solid #AAA;
+	border-radius: 100%;
+	color: transparent;
+	transition: none;
+	margin: 10px;
+	display: inline;
+}
+ul.thumbnails.image_picker_selector li .thumbnail img:focus {
+	box-shadow: 0 0 10px rgba(102,175,233,.6);
+	border-color: #66afe9;
+}
+ul.thumbnails.image_picker_selector li .thumbnail.selected img {
+	background-color: #BBB;
+}
+.intl-tel-input.allow-dropdown {
+	height: 100%;
+	padding: 6px 0px;
+}
+div.intl-tel-input, .phone {
+	display: inline;
+	width: 65%;
+	max-width: 250px;
+	margin: 0px 2px;
+	vertical-align: middle;
+}

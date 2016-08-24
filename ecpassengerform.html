@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Version: 0.1 Alpha -->
+<!-- The form has information of the cargo manifest and is used as an embedded document in the passenger and flight forms. -->
+<html lang="en">
+  <head>
+    <!-- Start_Header -->
+    <!-- Metadata for the form. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- Page Title -->
+    <title>Emergency Contact Form</title>
+    <!-- Stylesheets used to create the form. -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/intlTelInput.css" />
+    <link rel="stylesheet" href="css/styleForm.css" />
+    <link rel="stylesheet" href="css/formImageSelector.css" />
+    <!-- Scripts used in the form. -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/bootstrap/bootstrapHelper.js"></script>
+    <script src="js/imagePicker/image-picker.min.js"></script>
+    <script src="js/maskedInput/jquery.maskedinput.min.js"></script>
+    <script src="js/intlTelInput/intlTelInput.min.js"></script>
+    <script src="js/intlTelInput/utils.js"></script>
+    <script src="js/intlTelInput/intlTelInputHelper.js"></script>
+	<script src="js/jquery/documentHelper.js"></script>
+  </head>
+  <body>
+    <!-- Start_Body -->
+    <form class="form-vertical" id="form_emergencyContact">
+	  <!-- Start_Form: Emergency Contact Form -->
+      <fieldset>
+	    <!-- Start_Fieldset -->
+        <!-- Form_Legend: Emergency Contact Information -->
+        <legend id="form_legend">Emergency Contact</legend>
+        <div class="form-wrapper">
+		  <!-- Start_Wrapper -->
+          <div class="form-group">
+            <label>
+				<!-- Start_Label: Name-->
+				<img src="pictures/emergencyContact.svg" alt="Person Icon" class="img-thumbnail img-rounded" id="image_ecName"> 
+				<input type="text" class="form-control" id="input_text_ecName"> 
+				<!-- End_Label -->
+			</label>
+          </div>
+          <div class="form-group">
+            <label>
+				<!-- Start_Label: Phone Number-->
+				<img src="pictures/ecPhoneNum.svg" alt="Emergency Contact Phone Number Icon" class="img-thumbnail img-rounded" id="image_ecPhoneNum"> 
+				<input type="tel" autocomplete="off" pattern="\d*" class="phone form-control" id="input_tel_ecPhoneNum"> 
+				<!-- End_Label -->
+			</label>
+          </div>
+          <!-- This is where the emergency contacts and passenger cargo would go. -->
+          <!-- End_Wrapper -->
+        </div>
+        <!-- End_Fieldset -->
+      </fieldset>
+      <!-- End_Form -->
+    </form>
+    <!-- End_Body -->
+  </body>
+</html>

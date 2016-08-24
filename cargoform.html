@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Version: 0.1 Alpha -->
+<!-- The form has information of the flight itself and is used as an embedded document in the MAFWing html page. -->
+<html lang="en">
+  <head>
+    <!-- Start_Header -->
+    <!-- Metadata for the form. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- Page Title -->
+    <title>Cargo Form</title>
+    <!-- Stylesheets used to create the form. -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/intlTelInput.css" />
+    <link rel="stylesheet" href="css/styleForm.css" />
+    <link rel="stylesheet" href="css/formImageSelector.css" />
+    <!-- Scripts used in the form. -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/bootstrap/bootstrapHelper.js"></script>
+    <script src="js/imagePicker/image-picker.min.js"></script>
+	<script src="js/jquery/documentHelper.js"></script>
+  </head>
+  <body>
+    <!-- Start_Body -->
+    <form class="form-vertical" id="form_cargo">
+	  <!-- Start_Form: Cargo Form -->
+      <fieldset>
+	    <!-- Start_Fieldset -->
+        <!-- Form_Legend: Cargo Information -->
+        <legend id="form_legend">Cargo</legend>
+        <div class="form-wrapper">
+		  <!-- Start_Wrapper -->
+          <div class="form-group">
+            <label>
+				<!-- Start_Label: Cargo-->
+				<img src="pictures/cargo.svg" alt="Cargo Icon"  class="img-thumbnail img-rounded" id="image_cargo">
+				<div id="input_img_div">
+				<select class="imgpick form-control" id="input_select_cargo">
+					<option value=''></option>
+					<option data-img-src='pictures/blank.svg' value='General'></option>
+					<option data-img-src='pictures/food.svg' value='Food'></option>
+					<option data-img-src='pictures/livestock.svg' value='Livestock'></option>
+					<option data-img-src='pictures/medical.svg' value='Medical'></option>
+					<option data-img-src='pictures/hazard.svg' value='Hazard'></option>
+				</select>
+				</div>
+				<!-- End_Label -->
+			</label>
+          </div>
+          <div class="form-group">
+            <label>
+				<!-- Start_Label: Weight-->
+				<img src="pictures/weight.svg" alt="Weight Icon" class="img-thumbnail img-rounded" id="image_cargoWeight"> 
+				<input type="number" min="0" pattern="\d" class="form-control control-weight" id="input_number_cargoWeight">
+				<div class="form-control">
+					<select class="form-control control-weight" id="input_select_cargoMass">
+					  <option value='KG'>KG</option>
+					  <option value='LBS'>LBS</option>
+					</select>
+				</div>
+				<!-- End_Label -->
+            </label>
+          <!-- End_Wrapper -->
+        </div>
+        <!-- End_Fieldset -->
+      </fieldset>
+      <!-- End_Form -->
+    </form>
+    <!-- End_Body -->
+  </body>
+</html>

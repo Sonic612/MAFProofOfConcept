@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- Version: 0.1 Alpha -->
+<!-- The form has information of the passenger and is used to embed the cargo and emergency contact forms. -->
+<html lang="en">
+  <head>
+    <!-- Start_Header -->
+    <!-- Metadata for the form. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- Page Title -->
+    <title>Passenger Form</title>
+    <!-- Stylesheets used to create the form. -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/intlTelInput.css" />
+    <link rel="stylesheet" href="css/styleForm.css" />
+    <link rel="stylesheet" href="css/formImageSelector.css" />
+    <!-- Scripts used in the form. -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/bootstrap/bootstrapHelper.js"></script>
+    <script src="js/imagePicker/image-picker.min.js"></script>
+    <script src="js/maskedInput/jquery.maskedinput.min.js"></script>
+    <script src="js/intlTelInput/intlTelInput.min.js"></script>
+    <script src="js/intlTelInput/utils.js"></script>
+    <script src="js/intlTelInput/intlTelInputHelper.js"></script>
+	<script src="js/jquery/documentHelper.js"></script>
+	<!-- End_Header -->
+  </head>
+  <body>
+    <!-- Start_Body -->
+    <form class="form-vertical" id="form_passenger">
+	  <!-- Start_Form: Passenger Form -->
+      <fieldset>
+	    <!-- Start_Fieldset -->
+        <!-- Form_Legend: Passenger Information -->
+        <legend id="form_legend">Passenger</legend>
+        <div class="form-wrapper">
+		  <!-- Start_Wrapper -->
+          <div class="form-group">
+            <label>
+				<!-- Start_Label: Reason Of Flight-->
+				<img src="pictures/plane.svg" alt="Plane Icon"  class="img-thumbnail img-rounded" id="image_flightReason"> 
+				<select class="form-control" id="input_select_flightReason">
+					<option value=""></option>
+					<option value="G">General</option>
+					<option value="C">Church</option>
+					<option value="DOPC">Direct OP Costs</option>
+					<option value="M">Mission</option>
+				</select> 
+				<!-- End_Label -->
+			</label>
+          </div>
+          <div class="form-group">
+            <label>
+				<!-- Start_Label: Name-->
+				<img src="pictures/person.svg" alt="Person Icon" class="img-thumbnail img-rounded" id="image_name"> 
+				<input type="text" class="form-control" id="input_text_name"> 
+				<!-- End_Label -->
+			</label>
+          </div>
+          <div class="form-group">
+            <label>
+				<!-- Start_Label: Weight-->
+				<img src="pictures/weight.svg" alt="Weight Icon" class="img-thumbnail img-rounded" id="image_weight"> 
+				<input type="number" min="0" pattern="\d" class="form-control control-weight" id="input_number_weight">
+				<div class="form-control">
+					<select class="form-control control-weight" id="input_select_mass">
+					  <option value="KG">KG</option>
+					  <option value="LBS">LBS</option>
+					</select>
+				</div>
+				<!-- End_Label -->
+            </label>
+          </div>
+          <div class="form-group">
+            <label>
+				<!-- Start_Label: Phone Number-->
+				<img src="pictures/phoneNumber.svg" alt="Phone Number Icon" class="img-thumbnail img-rounded" id="image_phoneNum"> 
+				<input type="tel" autocomplete="off" pattern="\d*" class="phone form-control" id="input_tel_phoneNum"> 
+				<!-- End_Label -->
+			</label>
+          </div>
+          <div class="form-group">
+            <label>
+				<!-- Start_Label: Age-->
+				<img src="pictures/aging.svg" alt="Age Icon" class="img-thumbnail img-rounded" id="id_image"> 
+				<input type="number" class="form-control" id="input_number_age"> 
+				<!-- End_Label -->
+			</label>
+          </div>
+          <div class="form-group">
+            <label>
+				<!-- Start_Label: Gender-->
+				<img src="pictures/gender.svg" alt="gender Icon" class="img-thumbnail img-rounded" id="image_gender">
+				<div id="input_img_div">
+				<select class="imgpick form-control" id="input_select_gender">
+					  <option value="">Select Gender...</option>
+					  <option data-img-src='pictures/male.svg' value="M">Male</option>
+					  <option data-img-src='pictures/female.svg' value="F">Female</option>
+				</select>
+				</div>
+				<!-- End_Label -->
+            </label>
+          </div>
+          <div class="form-group">
+            <label>
+				<!-- Start_Label: Organization-->
+				<img src="pictures/organization.svg" class="img-thumbnail img-rounded" id="image_organization"
+				alt="Organization Icon" /> 
+				<input type="text" class="form-control" id="input_text_organization"/> 
+				<!-- End_Label -->
+			</label>
+          </div>
+          <!-- This is where the emergency contacts and passenger cargo would go. -->
+          <!-- End_Wrapper -->
+        </div>
+        <!-- End_Fieldset -->
+      </fieldset>
+      <!-- End_Form -->
+    </form>
+    <!-- End_Body -->
+  </body>
+</html>

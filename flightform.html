@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- Version: 0.1 Alpha -->
+<!-- The form has information of the flight itself and is used as an embedded document in the MAFWing html page. -->
+<html lang="en">
+  <head>
+    <!-- Start_Header -->
+    <!-- Metadata for the form. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <!-- Page Title -->
+    <title>MAFWing Flight Form</title>
+    <!-- Stylesheets used to create the form. -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styleForm.css" />
+    <!-- Scripts used in the form. -->
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/bootstrap/bootstrapHelper.js"></script>
+    <script src="js/jquery/documentHelper.js"></script>
+  </head>
+  <body>
+    <!-- Start_Body -->
+    <form class="form-vertical" id="form_flight">
+      <!-- Start_Form: Flight Form -->
+      <fieldset>
+        <!-- Start_Fieldset -->
+        <!-- Form_Legend: Flight Information -->
+        <legend id="form_legend">Flight</legend>
+        <div class="form-wrapper">
+          <!-- Start_Wrapper -->
+          <div class="form-group">
+            <label>
+            <!-- Start_Label: Date-->
+            <img src="pictures/calendar.svg" alt="Calendar Icon" class="img-thumbnail img-rounded" id="image_date" /> 
+            <input type="date" autocomplete="off" class="form-control datepicker" id="input_date_flightDate" /> 
+            <!-- End_Label -->
+			</label>
+          </div>
+          <div class="form-group">
+            <label>
+				<!-- Start_Label: Plane-->
+				<img src="pictures/plane.svg" alt="Plane Icon" class="img-thumbnail img-rounded" id="image_plane" /> 
+				<select class="form-control" id="input_select_plane">
+					<option value = ""></option>
+					<option>N35-8L2 (Cessna 206)</option>
+					<option>N35-8F2 (Cessna 206)</option>
+					<option>N45-8FF (Cessna 208)</option>
+					<option>N45-8L7 (Cessna 208)</option>
+				</select> 
+			<!-- End_Label -->
+			</label>
+          </div>
+          <div class="form-group">
+            <label>
+				<!-- Start_Label: TakeOff-->
+				<img src="pictures/takeOff.svg" alt="TakeOff Icon" class="img-thumbnail img-rounded" id="image_takeOff" /> 
+				<input type="time" class="form-control timer" id="input_time_flightTakeOff" /> 
+				<!-- End_Label -->
+			</label>
+          </div>
+          <div class="form-group">
+            <label>
+				<!-- Start_Label: Landing-->
+				<img src="pictures/landing.svg" alt="Landing Icon" class="img-thumbnail img-rounded" id="image_landing" /> 
+				<input type="time" class="form-control timer" id="input_time_flightLanding" /> 
+				<!-- End_Label -->
+			</label>
+          </div>
+          <div class="form-group">
+            <label>
+				<!-- Start_Label: Pilot-->
+				<img src="pictures/pilot.svg" alt="Pilot Icon" class="img-thumbnail img-rounded" id="image_pilot" /> 
+				<select class="form-control" id="input_select_flightPilot">
+					<option value=""></option>
+					<option>Matt Patlock</option>
+					<option>Greg Susana</option>
+					<option>David Rosenheighm</option>
+					<option>Soloman Gundy</option>
+				</select> 
+				<!-- End_Label -->
+			</label>
+          </div>
+          <!-- This is where to add the passenger and cargo forms (add one inside passengerForma and one below) -->
+          <!-- End_Wrapper -->
+        </div>
+        <!-- End_Fieldset -->
+      </fieldset>
+      <!-- End_Form -->
+    </form>
+    <!-- End_Body -->
+  </body>
+</html>

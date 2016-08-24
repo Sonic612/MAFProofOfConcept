@@ -1,0 +1,98 @@
+/* Extra small devices (small phones, 320px and up) */
+/* No media query since this is the default in Bootstrap */
+form {
+	width: 90%;
+	max-width: 720px;
+	margin: auto;
+}
+fieldset {
+	border: 1px solid #c0c0c0;
+	border-radius: 15px;
+	width: 100%;
+}
+legend {
+	border-bottom: 0; /*delete bottom border*/
+	width: auto;
+	padding: 10px;
+	margin: auto;
+}
+.form-wrapper {
+	width: 95%;
+	margin: auto;
+}
+label {
+	margin: 0;
+	width: 100%;
+	display: block;
+	clear: both;
+}
+.form-group {
+	padding: 8% 0px;
+	margin: auto;
+}
+.img-thumbnail { /*thumbnails (Pictures)*/
+	display: inline;
+	background-color: #EEE;
+	border: 1px solid #AAA;
+	border-radius: 10px;
+	width: 30%;
+	max-width: 128px;
+}
+.img-thumbnail-focus {
+	box-shadow: 0 0 10px rgba(102,175,233,.6);
+	border-color: #66afe9;
+}
+input[type=date].form-control, input[type=text].form-control, input[type=number].form-control, input[type=time].form-control, select.form-control, div.form-control { /*input and selects (all controls)*/
+	display: inline;
+	width: 66%;
+	max-width: 250px;
+	margin: 0px 2px;
+	vertical-align: middle;
+	font-size: 100%;
+}
+input[type=number].control-weight {
+	width: 40%;
+	max-width: 170px;
+	margin: 0 1px 0 0;
+}
+select.control-weight {
+	width: 25%;
+	max-width: 80px;
+	margin: 0 0 0 1px;
+	padding: 5px;
+}
+select.imgpick{
+	display: block !important;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	left: -1000px;
+}
+::-webkit-input-placeholder {
+	color: #333 !important;
+}
+/* phones (larger phones, 360px and up)*/
+@media (min-width: 360px) {
+.form-wrapper {
+	width: 90%;
+}
+}
+/* phones (larger phones, 480px and up)*/
+@media (min-width: 480px) {
+.form-wrapper {
+	width: 60%;
+}
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+/* Medium devices (desktops, 960px and up) */
+@media (min-width: 960px) {
+.form-wrapper {
+	width: 50%;
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
